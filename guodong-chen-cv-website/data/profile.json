@@ -1,0 +1,201 @@
+{
+  "name": "Guodong Chen",
+  "displayName": "Guodong Chen",
+  "initials": "GC",
+  "title": "Electrical Engineering Student",
+  "titleZh": "电气工程学生",
+  "subtitle": "Bachelor of Electrical Engineering (Honours)",
+  "subtitleZh": "电气工程荣誉学士",
+  "tagline": "RMIT University third-year student with practical engineering internship experience in rail hardware installation, maintenance support, and system troubleshooting.",
+  "taglineZh": "RMIT University 电气工程三年级学生，具备轨道交通硬件安装、维护支持与系统故障排查的现场实习经验。",
+  "intro": "我目前就读于 RMIT University 电气工程荣誉学士三年级，GPA 3.0。实习经历聚焦于轨道交通项目中的硬件安装、维护整改、部件级故障排查、质量控制与物料协调。",
+  "introEn": "I am currently a third-year Bachelor of Electrical Engineering (Honours) student at RMIT University with a GPA of 3.0. My internship experience focuses on rail project hardware installation, maintenance rectification, component-level troubleshooting, quality control, and parts coordination.",
+  "location": "Melbourne, Australia",
+  "avatar": "/images/avatar.jpg",
+  "portrait": "/images/portrait.jpg",
+  "aboutHeading": "Electrical Engineering Study and Practical System Support",
+  "aboutHeadingZh": "电气工程学习与现场系统支持",
+  "aboutLead": "我希望把课堂中的工程基础、现场实习中的执行经验，以及清晰的技术沟通结合起来，持续提升在电气系统、维护支持和工程协作中的能力。",
+  "aboutLeadEn": "I aim to combine engineering fundamentals, hands-on internship execution, and clear technical communication to keep improving in electrical systems, maintenance support, and engineering collaboration.",
+  "aboutCallout": "目前开放实习、项目合作和早期工程岗位机会，欢迎 HR 或招聘团队联系我，讨论电气工程、轨道系统、维护支持和项目协调相关机会。",
+  "aboutCalloutEn": "Open to internship, project, and early-career engineering opportunities. HR and hiring teams are welcome to contact me for roles in electrical engineering, rail systems, maintenance support, and project coordination.",
+  "personalInfo": [
+    { "label": "姓名", "labelEn": "Name", "value": "Guodong Chen" },
+    { "label": "学校", "labelEn": "University", "value": "RMIT University" },
+    { "label": "专业", "labelEn": "Major", "value": "Electrical Engineering (Honours)" },
+    { "label": "年级 / GPA", "labelEn": "Year / GPA", "value": "Third Year / 3.0" },
+    { "label": "现居地", "labelEn": "Location", "value": "Melbourne, Australia" },
+    { "label": "联系方式", "labelEn": "Contact", "value": "0423029288", "valueEn": "0423029288" }
+  ],
+  "summary": [
+    {
+      "zh": "目前就读于 RMIT University 电气工程荣誉学士三年级，GPA 3.0。",
+      "en": "Currently studying a Bachelor of Electrical Engineering (Honours) at RMIT University, third year, GPA 3.0."
+    },
+    {
+      "zh": "自 2023 年 3 月至今在 CRRC Logistics 实习，支持 Melbourne HCMT 项目。",
+      "en": "Engineering intern at CRRC Logistics from Mar 2023 to Current, supporting the Melbourne HCMT project."
+    },
+    {
+      "zh": "具备主驾 cab 硬件安装、维护整改、部件级故障排查、质量控制与物料协调经验。",
+      "en": "Practical experience across driver's cabin hardware installation, maintenance and rectification tasks, component-level troubleshooting, quality control, and logistics coordination."
+    }
+  ],
+  "education": {
+    "institution": "RMIT University",
+    "degree": "Bachelor of Electrical Engineering (Honours)",
+    "degreeZh": "电气工程荣誉学士",
+    "status": "Currently studying, third year",
+    "statusZh": "目前在读，三年级",
+    "gpa": "3.0",
+    "focus": [
+      { "zh": "电气工程基础知识", "en": "Electrical engineering fundamentals" },
+      { "zh": "系统思维与技术文档", "en": "Systems thinking and technical documentation" },
+      { "zh": "工程问题分析与解决", "en": "Engineering problem solving" },
+      { "zh": "维护支持与故障排查实践", "en": "Practical maintenance and troubleshooting" }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Engineering Intern",
+      "roleZh": "工程实习生",
+      "organization": "CRRC Logistics",
+      "department": "Engineering Department",
+      "departmentZh": "工程部门",
+      "period": "Mar 2023 - Current",
+      "periodZh": "2023 年 3 月 - 至今",
+      "project": "Melbourne HCMT project",
+      "projectZh": "Melbourne HCMT 项目",
+      "description": "Supporting engineering delivery, maintenance, rectification, and logistics activities for high-capacity metro train work.",
+      "descriptionZh": "参与高容量地铁列车项目中的工程交付、维护整改、故障排查与物流协调支持。",
+      "highlights": [
+        {
+          "zh": "支持主驾 cab 硬件安装工作。",
+          "en": "Supported hardware installation for the main driver's cabin."
+        },
+        {
+          "zh": "协助维护、整改与部件级故障排查任务。",
+          "en": "Assisted with maintenance, rectification, and component-level troubleshooting tasks."
+        },
+        {
+          "zh": "参与控制柜接线修改工作。",
+          "en": "Participated in control cabinet wiring modification work."
+        },
+        {
+          "zh": "协助侧装屏幕改造与调整。",
+          "en": "Assisted with side-mounted screen retrofit adjustments."
+        },
+        {
+          "zh": "支持物料处理、库存协调、审查与质量控制。",
+          "en": "Supported material handling, inventory coordination, auditing, and quality control."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Melbourne HCMT 硬件安装支持",
+      "titleEn": "Melbourne HCMT Hardware Installation Support",
+      "type": "实习项目",
+      "typeEn": "Internship Project",
+      "description": "在 Melbourne High Capacity Metro Train 项目中支持硬件安装和维护相关工作。",
+      "descriptionEn": "Hands-on support for hardware installation and maintenance activities on Melbourne's High Capacity Metro Train project.",
+      "tags": [
+        { "zh": "硬件安装", "en": "Hardware installation" },
+        { "zh": "轨道系统", "en": "Rail systems" },
+        { "zh": "维护支持", "en": "Maintenance" }
+      ]
+    },
+    {
+      "title": "控制柜接线修改",
+      "titleEn": "Control Cabinet Wiring Modification",
+      "type": "工程支持",
+      "typeEn": "Engineering Support",
+      "description": "参与接线修改工作，关注安装准确性、记录与质量检查。",
+      "descriptionEn": "Participated in wiring modification work with attention to installation accuracy, documentation, and quality checks.",
+      "tags": [
+        { "zh": "接线", "en": "Wiring" },
+        { "zh": "系统集成", "en": "System integration" },
+        { "zh": "质量控制", "en": "Quality control" }
+      ]
+    },
+    {
+      "title": "侧装屏幕改造支持",
+      "titleEn": "Side-Mounted Screen Retrofit Support",
+      "type": "改造工作",
+      "typeEn": "Retrofit Work",
+      "description": "在工程更新工作中协助侧装屏幕系统的改造与调整。",
+      "descriptionEn": "Assisted with retrofit and adjustment tasks for side-mounted screen systems during engineering update work.",
+      "tags": [
+        { "zh": "改造", "en": "Retrofit" },
+        { "zh": "故障排查", "en": "Troubleshooting" },
+        { "zh": "调整", "en": "Adjustment" }
+      ]
+    },
+    {
+      "title": "零件与库存协调",
+      "titleEn": "Parts and Inventory Coordination",
+      "type": "运营支持",
+      "typeEn": "Operations Support",
+      "description": "支持物流熟悉、物料处理和工程活动中的库存协调。",
+      "descriptionEn": "Supported logistics familiarisation, material handling, and inventory coordination for engineering activities.",
+      "tags": [
+        { "zh": "物流", "en": "Logistics" },
+        { "zh": "库存", "en": "Inventory" },
+        { "zh": "零件管理", "en": "Parts management" }
+      ]
+    }
+  ],
+  "skills": [
+    { "name": "硬件安装", "nameEn": "Hardware installation", "level": 86 },
+    { "name": "部件级故障排查", "nameEn": "Component troubleshooting", "level": 82 },
+    { "name": "维护与整改", "nameEn": "Maintenance and rectification", "level": 80 },
+    { "name": "控制柜接线支持", "nameEn": "Control cabinet wiring support", "level": 76 },
+    { "name": "质量控制与审查", "nameEn": "Quality control and auditing", "level": 78 },
+    { "name": "物料与库存协调", "nameEn": "Material handling and inventory coordination", "level": 74 },
+    { "name": "技术文档", "nameEn": "Technical documentation", "level": 72 },
+    { "name": "团队沟通", "nameEn": "Team communication", "level": 82 }
+  ],
+  "selfEvaluation": [
+    {
+      "zh": "学习方向清晰，能够把电气工程课程基础与现场工程任务结合起来。",
+      "en": "I have a clear learning direction and can connect electrical engineering coursework with practical engineering tasks."
+    },
+    {
+      "zh": "实习中重视执行准确性、质量检查和问题记录，适合参与维护、安装和排查类任务。",
+      "en": "During internship work, I value execution accuracy, quality checks, and issue recording, especially in maintenance, installation, and troubleshooting tasks."
+    },
+    {
+      "zh": "愿意在团队中主动沟通，持续补齐工程实践、技术文档和系统理解能力。",
+      "en": "I am willing to communicate proactively in teams and keep improving engineering practice, technical documentation, and system understanding."
+    }
+  ],
+  "contact": [
+    {
+      "label": "邮箱",
+      "labelEn": "Email",
+      "value": "davchen66@gmail.com",
+      "valueEn": "davchen66@gmail.com",
+      "href": "mailto:davchen66@gmail.com"
+    },
+    {
+      "label": "电话",
+      "labelEn": "Phone",
+      "value": "0423029288",
+      "valueEn": "0423029288",
+      "href": "tel:0423029288"
+    },
+    {
+      "label": "现居地",
+      "labelEn": "Location",
+      "value": "Melbourne, Australia",
+      "href": ""
+    },
+    {
+      "label": "学校",
+      "labelEn": "University",
+      "value": "RMIT University",
+      "href": "https://www.rmit.edu.au/"
+    }
+  ]
+}

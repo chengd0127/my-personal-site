@@ -1,0 +1,44 @@
+@media (prefers-reduced-motion: no-preference) {
+  .hero-avatar,
+  .hero h1,
+  .hero h2,
+  .hero p,
+  .hero-actions,
+  .section,
+  .page-hero {
+    animation: fade-up 540ms ease both;
+  }
+
+  .hero h1 {
+    animation-delay: 60ms;
+  }
+
+  .hero h2,
+  .hero p,
+  .hero-actions {
+    animation-delay: 110ms;
+  }
+
+  .button,
+  .nav-link,
+  .project-card {
+    transition: transform 160ms ease, border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+  }
+
+  .button:hover,
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
