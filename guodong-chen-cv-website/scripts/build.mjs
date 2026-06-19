@@ -19,12 +19,30 @@ const pageModules = [
   "../pages/404.mjs"
 ];
 
+function normalizeBasePath(value = "") {
+  const cleaned = String(value).trim().replace(/^\/+|\/+$/g, "");
+  return cleaned ? `/${cleaned}` : "";
+}
+
+function createSite(basePath) {
+  return {
+    basePath,
+    path(value = "") {
+      if (!value || value.startsWith("#") || /^(https?:|mailto:|tel:)/i.test(value)) {
+        return value;
+      }
+
+      return value.startsWith("/") ? `${basePath}${value}` : value;
+    }
+  };
+}
+
 async function readJson(filePath) {
   const raw = await fs.readFile(filePath, "utf8");
   return JSON.parse(raw);
 }
 
-function documentTemplate({ profile, page, content }) {
+function documentTemplate({ profile, page, content, site }) {
   const title = page.title === "Home" ? profile.name : `${page.title} | ${profile.name}`;
 
   return `<!doctype html>
@@ -47,13 +65,13 @@ function documentTemplate({ profile, page, content }) {
         } catch (_) {}
       })();
     </script>
-    <link rel="stylesheet" href="/styles/globals.css">
-    <link rel="stylesheet" href="/styles/animations.css">
-    <script src="/js/site.js" defer></script>
+    <link rel="stylesheet" href="${escapeHtml(site.path("/styles/globals.css"))}">
+    <link rel="stylesheet" href="${escapeHtml(site.path("/styles/animations.css"))}">
+    <script src="${escapeHtml(site.path("/js/site.js"))}" defer></script>
   </head>
   <body>
     <div class="site-shell">
-      ${Navbar({ profile, currentPath: page.path })}
+      ${Navbar({ profile, currentPath: page.path, site })}
       <main>
         ${content}
       </main>
@@ -73,7 +91,13 @@ async function copyIfExists(from, to) {
 }
 
 async function build() {
-  const profile = await readJson(path.join(rootDir, "data", "profile.json"));
+  const site = createSite(normalizeBasePath(process.env.BASE_PATH));
+  const rawProfile = await readJson(path.join(rootDir, "data", "profile.json"));
+  const profile = {
+    ...rawProfile,
+    avatar: site.path(rawProfile.avatar),
+    portrait: site.path(rawProfile.portrait)
+  };
   await fs.rm(distDir, { recursive: true, force: true });
   await fs.mkdir(distDir, { recursive: true });
 
@@ -89,7 +113,8 @@ async function build() {
       documentTemplate({
         profile,
         page: module.page,
-        content: module.render(profile)
+        content: module.render(profile, site),
+        site
       })
     );
     console.log(`Built ${module.page.path} -> dist/${module.page.output}`);

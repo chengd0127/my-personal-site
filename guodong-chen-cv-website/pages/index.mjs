@@ -25,7 +25,7 @@ function infoGrid(items = []) {
     .join("");
 }
 
-export function render(profile) {
+export function render(profile, site = { path: (value) => value }) {
   const experience = profile.experience[0];
   const projectCards = profile.projects.slice(0, 2).map((project) => ProjectCard({ project })).join("");
   const skills = profile.skills.slice(0, 4).map((skill) => SkillBar({ skill })).join("");
@@ -38,7 +38,7 @@ export function render(profile) {
       <p data-i18n data-zh="${escapeHtml(profile.taglineZh || profile.tagline)}" data-en="${escapeHtml(profile.tagline)}">${escapeHtml(profile.taglineZh || profile.tagline)}</p>
       <div class="hero-actions">
         <a class="button primary" href="#about" data-i18n data-zh="关于我" data-en="About">关于我</a>
-        <a class="button secondary" href="/projects/" data-i18n data-zh="实习经历" data-en="Experience">实习经历</a>
+        <a class="button secondary" href="${escapeHtml(site.path("/projects/"))}" data-i18n data-zh="实习经历" data-en="Experience">实习经历</a>
       </div>
     </section>
 
@@ -83,7 +83,7 @@ export function render(profile) {
           <p class="section-kicker" data-i18n data-zh="项目片段" data-en="Selected Work">项目片段</p>
           <h2 data-i18n data-zh="项目片段" data-en="Selected Work">项目片段</h2>
         </div>
-        <a class="text-link" href="/projects/" data-i18n data-zh="查看全部" data-en="View all">查看全部</a>
+        <a class="text-link" href="${escapeHtml(site.path("/projects/"))}" data-i18n data-zh="查看全部" data-en="View all">查看全部</a>
       </div>
       <div class="card-grid">${projectCards}</div>
     </section>
@@ -100,7 +100,7 @@ export function render(profile) {
       <p class="section-kicker" data-i18n data-zh="开放机会" data-en="Open Opportunities">开放机会</p>
       <h2 class="opportunity-title" data-i18n data-zh="${escapeHtml(profile.aboutCallout)}" data-en="${escapeHtml(profile.aboutCalloutEn || profile.aboutCallout)}">${escapeHtml(profile.aboutCallout)}</h2>
       <div class="opportunity-actions">
-        <a class="button primary" href="/contact/" data-i18n data-zh="联系我" data-en="Contact Me">联系我</a>
+        <a class="button primary" href="${escapeHtml(site.path("/contact/"))}" data-i18n data-zh="联系我" data-en="Contact Me">联系我</a>
         <a class="button secondary" href="mailto:davchen66@gmail.com">davchen66@gmail.com</a>
       </div>
     </section>
